@@ -22,7 +22,7 @@ def json_catch_unknown(filename,unknown_key):
     except KeyError:
         print(f'key-{unknown_key}는 존재하지 않습니다.')
 
-json_catch_unknown('message1.json','test_key')
+json_catch_unknown('message1.json', 'test_key')
 
 def json_detect_unknown(filename,unknown_key):
     json_data = open_json_file(filename)
@@ -32,7 +32,7 @@ def json_detect_unknown(filename,unknown_key):
     else:
         print(f'key-{unknown_key}는 존재하지 않습니다.')
 
-json_detect_unknown('message1.json','test_key')
+json_detect_unknown('message1.json', 'test_key')
 
 ## 3 - create json
 def create_json_file(filename,json_object):
@@ -55,4 +55,4 @@ json_object = {
     u'num_array': [1, 2, 3, 4, 5],
     u'str_array': [u'one', u'two', u'three', u'four', u'five']
 }
-create_json_file('test_by_sunn.json',json_object)
+create_json_file('test_by_sunn.json', json_object)
