@@ -118,6 +118,6 @@ xml_tree = etree.Element('message')
 to_xml(xml_tree, message2)
 
 # xml_declaration = True : 헤더 삽입으로 유지보수를 수월하게
-with open('message2.xml', 'wb') as file:
+with open('test_by_sunn.xml', 'wb') as file:
     file.write(etree.tostring(
         xml_tree, xml_declaration=True, encoding='UTF-8', pretty_print=True))
